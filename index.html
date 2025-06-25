@@ -6,45 +6,82 @@
   <title>The Zen Music Lab</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f5f7fa;
+      font-family: 'Georgia', serif;
+      background-color: #f2f2f2;
       margin: 0;
       padding: 0;
-      color: #333;
+      color: #1c1c1c;
+      line-height: 1.6;
     }
     header {
-      background-color: #2d3e50;
-      padding: 20px;
+      background-color: #111;
+      padding: 40px 20px;
       text-align: center;
-      color: white;
+      color: #eee;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-style: italic;
+      color: #ccc;
+    }
+    .intro {
+      background-color: #fff;
+      padding: 50px 30px;
+      margin-top: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      max-width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .intro h2 {
+      font-size: 2rem;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+    .intro p {
+      font-size: 1.1rem;
+      color: #444;
+      margin-bottom: 10px;
     }
     .container {
-      max-width: 960px;
-      margin: 40px auto;
+      max-width: 1000px;
+      margin: 50px auto;
       padding: 0 20px;
     }
     .video-section {
-      margin-bottom: 40px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 20px;
+      margin-bottom: 60px;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     }
     iframe {
       width: 100%;
-      height: 400px;
-      border: none;
+      height: 420px;
+      border-radius: 6px;
     }
     .video-title {
-      font-size: 1.5rem;
-      margin: 10px 0 5px;
+      font-size: 1.8rem;
+      margin: 20px 0 10px;
+      font-weight: bold;
+      color: #2c3e50;
     }
     .video-description {
       color: #555;
+      font-size: 1rem;
     }
     footer {
-      background-color: #2d3e50;
-      color: white;
+      background-color: #111;
+      color: #bbb;
       text-align: center;
-      padding: 20px 0;
+      padding: 30px 10px;
+      font-size: 0.9rem;
+      margin-top: 50px;
     }
   </style>
 </head>
@@ -53,10 +90,18 @@
     <h1>The Zen Music Lab</h1>
     <p>Focus • Binaural Beats • Deep Work Music</p>
   </header>
+
+  <section class="intro">
+    <h2>Welcome to The Zen Music Lab</h2>
+    <p>We create immersive soundscapes designed to calm the mind and ignite focus. Whether you're studying, working, meditating, or simply unwinding, our music blends ambient textures with science-backed frequencies to help you find your flow.</p>
+    <p>Explore a range of deep work sessions, 40 Hz binaural beats, ambient compositions, and serene visual shorts — all curated to support your inner clarity and creativity.</p>
+    <p>Let your mind breathe, and your focus thrive.</p>
+  </section>
+
   <div class="container">
     <div class="video-section">
       <div class="video-title">40 Hz Gamma Binaural Beat – Boost Your Focus</div>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/4nxNiyqjlsE?si=xICSYQKU0J2j3cYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/4nxNiyqjlsE?si=xICSYQKU0J2j3cYs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <p class="video-description">
         This 1-hour gamma wave session is designed to enhance cognitive performance, attention, and focus.
         Featuring 40 Hz binaural stimulation and subtle ambient textures.
@@ -65,7 +110,7 @@
 
     <div class="video-section">
       <div class="video-title">Evening Focus | Short Film with Calm Audio</div>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/gtZ7J86a8PY?si=OjgeFXhoC57nqghk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/gtZ7J86a8PY?si=OjgeFXhoC57nqghk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <p class="video-description">
         A tranquil short visual paired with calm ambient music, designed to bring your mind to rest and clarity.
       </p>
@@ -73,12 +118,13 @@
 
     <div class="video-section">
       <div class="video-title">16-Minute Ambient Focus Music for Productivity</div>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/dhw50hnpPZM?si=cPMlymPX9yNpx1OE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/dhw50hnpPZM?si=cPMlymPX9yNpx1OE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <p class="video-description">
         A carefully crafted ambient session for deep concentration and creative work. Perfect for study, writing, or mindful productivity.
       </p>
     </div>
   </div>
+
   <footer>
     <p>&copy; 2025 The Zen Music Lab • All Rights Reserved</p>
   </footer>
